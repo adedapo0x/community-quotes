@@ -1,6 +1,6 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
-const Quote = require("../src/models/Quote");
+const Quote = require("../src/models/quote.models");
 
 async function seed() {
   try {

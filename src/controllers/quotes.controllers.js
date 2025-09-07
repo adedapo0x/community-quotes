@@ -1,4 +1,4 @@
-const Quote = require("../models/Quote");
+const Quote = require("../models/quote.models");
 
 async function createQuote(req, res) {
   const { text, author } = req.body;

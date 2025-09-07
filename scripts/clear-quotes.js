@@ -1,6 +1,6 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
-const Quote = require("../src/models/Quote");
+const Quote = require("../src/models/quote.models");
 
 async function clear() {
   try {
@@ -11,7 +11,7 @@ async function clear() {
     console.log("All quotes cleared!");
 
     process.exit(0);
-    
+
   } catch (err) {
     console.error("Clear failed:", err.message);
     process.exit(1);

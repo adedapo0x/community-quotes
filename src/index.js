@@ -1,5 +1,4 @@
 require("dotenv").config()
-require("express-async-errors")
 
 const express = require("express")
 const mongoose = require("mongoose")
@@ -7,7 +6,7 @@ const morgan = require("morgan")
 
 const app = express()
 
-const quoteRoutes = require("./routes/quoteRoutes");
+const quoteRoutes = require("./routes/quotes.route");
 
 app.use(express.json())
 app.use(morgan("dev"))

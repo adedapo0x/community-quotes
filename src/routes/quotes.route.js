@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 
-const { createQuote, getAllQuotes, getRandomQuote }  = require("../controllers/quoteController");
+const { createQuote, getAllQuotes, getRandomQuote }  = require("../controllers/quotes.controllers");
 
 router.post("/", createQuote);
 
