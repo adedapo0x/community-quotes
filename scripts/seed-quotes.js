@@ -18,6 +18,7 @@ async function seed() {
 
     console.log("Database seeded with sample quotes!");
     process.exit(0);
+
   } catch (err) {
     console.error("Seeding failed:", err.message);
     process.exit(1);

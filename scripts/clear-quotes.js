@@ -11,6 +11,7 @@ async function clear() {
     console.log("All quotes cleared!");
 
     process.exit(0);
+    
   } catch (err) {
     console.error("Clear failed:", err.message);
     process.exit(1);
